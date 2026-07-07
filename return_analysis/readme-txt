@@ -1,0 +1,26 @@
+# 🛒 E-Commerce SKU Return Analyzer
+
+## 📊 Business Objective
+High return rates directly impact the profitability of any e-commerce business. The **SKU Return Analyzer** is an internal business intelligence tool designed to help category managers and business analysts quickly identify *why* products are being returned. 
+
+By combining quantitative sales metrics with qualitative customer feedback (using **Google Gemini 2.5 Flash AI**), this dashboard provides an instant, actionable 1-line solution to reduce return rates for specific SKUs.
+
+## ✨ Key Features
+- **Data Integration:** Seamlessly merges Sales data (`earn_more.xlsx`) with Return Comments (`fk_mars_return.xlsx`).
+- **Interactive Drill-Down:** Filter products easily via cascading dropdowns (Group Code ➔ Style Code ➔ SKU).
+- **Core Business Metrics:** Instantly view Gross Units, Gross Sale (GMV), Return Units, and Return Rate (%).
+- **AI-Powered Insights:** Automatically analyzes hundreds of messy customer return comments and outputs exactly ONE actionable solution to fix the root cause.
+- **Memory Optimized:** Uses advanced Pandas column filtering and Streamlit resource caching to handle massive datasets (e.g., 6M+ rows) without crashing.
+
+## 🛠️ Tech Stack
+- **Frontend/Framework:** [Streamlit](https://streamlit.io/)
+- **Data Processing:** Python, Pandas, Openpyxl
+- **AI/LLM Engine:** Google Generative AI (Gemini 2.5 Flash)
+- **Fault Tolerance:** Tenacity (for exponential backoff and API retry logic)
+
+## 🚀 How to Run Locally
+
+### 1. Prerequisites
+Make sure you have Python installed. Clone the repository and install the required dependencies:
+```bash
+pip install -r requirements.txt
